@@ -47,3 +47,15 @@ while i < 100 {
 }
 
 print(mass)
+//4. Удалить из этого массива все четные числа и все числа, которые не делятся на 3.
+var ind : Int = 0
+
+for elem in mass {
+    if elem%2==0 || n == 0 || elem%3==0 {
+     
+        mass.remove(at: ind)
+        ind = ind-1
+    }
+    ind += 1
+}
+print(mass)
