@@ -35,3 +35,15 @@ func na3(_ x:Int)->String {
 var x: Int=4;
 
 print(na3(x))
+
+//3 Создать возрастающий массив из 100 чисел
+
+var mass = [Int]()
+var i: Int = 0
+while i < 100 {
+    mass.append(i)
+    i += 1
+    
+}
+
+print(mass)
