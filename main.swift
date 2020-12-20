@@ -59,3 +59,21 @@ for elem in mass {
     ind += 1
 }
 print(mass)
+
+//5. * Написать функцию, которая добавляет в массив новое число Фибоначчи, и добавить при помощи нее 100 элементов.
+
+//Числа Фибоначчи определяются соотношениями Fn=Fn-1 + Fn-2.
+
+func fnAppened( _ Fn: Int){
+    let Fn = Fn-1 + Fn-2
+    
+    mass1.append(Fn)
+}
+var mass1 = [Int]()
+var Fn=1;
+
+while Fn <= 100{
+    fnAppened(Fn)
+    Fn += 2
+}
+print(mass1)
